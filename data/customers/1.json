@@ -1,0 +1,13 @@
+{  
+  "id":1,
+  "document":"59869587H",
+  "name":"Maria",
+  "surname":"Milà",
+  "address":"Plaça de Karl Marx, 25",
+  "city":"Barcelona",
+  "province":8,
+  "email":"mariamila@gmail.com",
+  "password":"4fa24kl2dsaf",
+  "password_confirmation":"4fa24kl2dsaf",
+  "subscribed_to_bulletin":false
+}

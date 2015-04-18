@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gestión de clientes</title>
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-header">
+        Gestión de clientes
+        <a href="#" class="btn btn-default pull-right" id="new-customer-button">Nuevo</a>
+      </h1>
+
+
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="nav nav-pills nav-stacked" id="customer-list">
+          </ul>
+        </div>
+
+        <div class="col-sm-8">
+          <form role="form" class="form-horizontal" id="customer-form">
+
+            <fieldset>
+              <legend>Datos personales</legend>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-dni">DNI</label>
+                <div class="col-sm-10">
+                  <input type="text" required class="form-control" id="customer-dni" name="dni" placeholder="DNI">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-name">Nombre</label>
+                <div class="col-sm-10">
+                  <input type="text" required class="form-control" id="customer-name" name="name" placeholder="Nombre">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-surname">Apellidos</label>
+                <div class="col-sm-10">
+                  <input type="text" required class="form-control" id="customer-surname" name="surname" placeholder="Apellidos">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Domicilio</legend>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-address">Dirección</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="customer-address" name="address" placeholder="Dirección"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-city">Población</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="customer-city" name="city" placeholder="Población">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-postcode">Código postal</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="customer-postcode" name="postcode" placeholder="Código postal">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-province">Provincia</label>
+                <div class="col-sm-10">
+                  <select class="form-control" id="customer-province" name="province">
+                    <option value="">(Seleccionar)</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Datos de registro</legend>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-email">E-mail</label>
+                <div class="col-sm-10">
+                  <input type="email" required class="form-control" id="customer-email" name="email" placeholder="E-mail">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-password">Contraseña</label>
+                <div class="col-sm-10">
+                  <input type="password" required class="form-control" id="customer-password" name="password" placeholder="Contraseña">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="customer-password-confirm">Confirmación de contraseña</label>
+                <div class="col-sm-10">
+                  <input type="password" required class="form-control" id="customer-password-confirm" name="password-confirm" placeholder="Confirmación de contraseña">
+                </div>
+              </div>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Preferencias</legend>
+
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="customer-accept-conditions" name="accept-conditions" value="1"> Recibe el boletín
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" class="btn btn-primary" value="Guardar" data-action="save">
+                <input type="button" class="btn btn-danger" value="Eliminar" data-action="delete">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="resources/js/spain-provinces.js"></script>
+    <script src="resources/js/main.js"></script>
+  </body>
+</html>
